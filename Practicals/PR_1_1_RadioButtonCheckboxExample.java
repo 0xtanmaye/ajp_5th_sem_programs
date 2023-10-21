@@ -2,7 +2,7 @@ import java.awt.*;
 
 public class PR_1_1_RadioButtonCheckboxExample {
 	public static void main(String[] args) {
-		Frame frame = new Frame("Radio Buttons and Checkboxes Demo");
+		Frame frame = new Frame("Radio Buttons and Checkboxes Example");
 
 		CheckboxGroup divisionGroup = new CheckboxGroup();
 
