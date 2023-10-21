@@ -48,7 +48,6 @@ class FormFrame extends Frame {
 		this.add(registerBtn);
 		
 		this.setVisible(true);
-		
 	}
 }
 
@@ -56,4 +55,4 @@ public class PR_1_2_FormExample {
 	public static void main(String[] args) {
 		new FormFrame();
 	}
-}	
+}
