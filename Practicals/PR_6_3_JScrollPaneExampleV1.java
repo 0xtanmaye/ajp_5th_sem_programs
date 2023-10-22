@@ -10,7 +10,7 @@ class JScrollPaneJFrame extends JFrame
 		this.setSize(400, 400);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		JTextArea textArea = new JTextArea();
+		JTextArea textArea = new JTextArea(10, 20);
 		JScrollPane scrollableTextArea = new JScrollPane(textArea);
 		
 		scrollableTextArea.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
@@ -21,7 +21,7 @@ class JScrollPaneJFrame extends JFrame
 	}
 }
 
-public class PR_6_2_JScrollPaneExample
+public class PR_6_3_JScrollPaneExampleV1
 {
 	public static void main(String[] args)
 	{
