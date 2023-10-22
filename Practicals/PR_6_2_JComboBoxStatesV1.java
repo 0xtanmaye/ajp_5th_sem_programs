@@ -13,7 +13,7 @@ class JComboBoxJFrame extends JFrame implements ItemListener
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setLayout(new FlowLayout());
 		this.setSize(400, 300);
-		// cityComboBox = new JComboBox<String>(states);
+		// stateComboBox = new JComboBox<String>(states);
 		stateComboBox = new JComboBox<String>();
 		stateComboBox.addItem("Maharashtra");
 		stateComboBox.addItem("Gujarat");
