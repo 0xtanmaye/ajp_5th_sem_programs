@@ -4,34 +4,34 @@ import java.awt.*;
 
 class JComboBoxJFrame extends JFrame implements ItemListener
 {
-	JComboBox countryComboBox;
+	JComboBox<String> stateComboBox;
 	JLabel msgLabel;
 	JComboBoxJFrame()
 	{
-		this.setTitle("Countries JComboBox");
-		// String countries[] = {"India", "China", "Pakistan", "Bangladesh"};
+		this.setTitle("Indian States JComboBox");
+		// String states[] = {"Maharashtra", "Gujarat", "Goa", "Rajasthan"};
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setLayout(new FlowLayout());
 		this.setSize(400, 300);
-		// cityComboBox = new JComboBox(countries);
-		countryComboBox = new JComboBox();
-		countryComboBox.addItem("India");
-		countryComboBox.addItem("China");
-		countryComboBox.addItem("Pakistan");
-		countryComboBox.addItem("Bangladesh");
+		// cityComboBox = new JComboBox<String>(states);
+		stateComboBox = new JComboBox<String>();
+		stateComboBox.addItem("Maharashtra");
+		stateComboBox.addItem("Gujarat");
+		stateComboBox.addItem("Goa");
+		stateComboBox.addItem("Rajasthan");
 		msgLabel = new JLabel();
-		countryComboBox.addItemListener(this);
-		this.add(countryComboBox);
+		stateComboBox.addItemListener(this);
+		this.add(stateComboBox);
 		this.add(msgLabel);
 		this.setVisible(true);
 	}
 	public void itemStateChanged(ItemEvent ie)
 	{
-		msgLabel.setText("You selected: " + countryComboBox.getSelectedItem());
+		msgLabel.setText("You selected: " + stateComboBox.getSelectedItem());
 	}
 }
 
-public class PR_6_3_JComboBoxCountries
+public class PR_6_2_JComboBoxStatesV1
 {
 	public static void main(String[] args)
 	{
