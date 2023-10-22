@@ -4,7 +4,7 @@ import java.awt.*;
 
 class JComboBoxJFrame extends JFrame implements ItemListener
 {
-	JComboBox cityComboBox;
+	JComboBox<String> cityComboBox;
 	JLabel msgLabel;
 	JComboBoxJFrame()
 	{
@@ -13,8 +13,8 @@ class JComboBoxJFrame extends JFrame implements ItemListener
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setLayout(new FlowLayout());
 		this.setSize(400, 300);
-		// cityComboBox = new JComboBox(cities);
-		cityComboBox = new JComboBox();
+		// cityComboBox = new JComboBox<String>(cities);
+		cityComboBox = new JComboBox<String>();
 		cityComboBox.addItem("Solapur");
 		cityComboBox.addItem("Pune");
 		cityComboBox.addItem("Banglore");
@@ -31,7 +31,7 @@ class JComboBoxJFrame extends JFrame implements ItemListener
 	}
 }
 
-public class PR_6_1_JComboBoxExample
+public class PR_6_1_JComboBoxExampleV1
 {
 	public static void main(String[] args)
 	{
