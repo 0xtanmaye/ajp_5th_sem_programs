@@ -2,14 +2,14 @@ import javax.swing.*;
 import java.awt.*;
 import javax.swing.tree.*;
 
-class JTreeJFrame extends JFrame
+public class PR_7_1_JTreeExampleV2
 {
-	JTreeJFrame()
+	public static void main(String[] args)
 	{
-		this.setLayout(new BorderLayout());
-		this.setTitle("JTree Example");
-		this.setSize(600, 600);
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		JFrame jframe = new JFrame("JTree Example");
+		jframe.setLayout(new BorderLayout());
+		jframe.setSize(600, 600);
+		jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		DefaultMutableTreeNode countries = new DefaultMutableTreeNode("Countries");
 		DefaultMutableTreeNode india = new DefaultMutableTreeNode("India");
@@ -42,15 +42,7 @@ class JTreeJFrame extends JFrame
 		sTexas.add(cDallas);
 		
 		JTree selectLocation = new JTree(countries);
-		this.add(selectLocation);
-		this.setVisible(true);
+		jframe.add(selectLocation);
+		jframe.setVisible(true);
 	}
 }
-
-public class PR_7_1_JTreeExampleV1
-{
-	public static void main(String[] args)
-	{
-		new JTreeJFrame();
-	}
-}	
