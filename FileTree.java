@@ -39,7 +39,7 @@ public class FileTree implements TreeExpansionListener
 
 	public static void main(String[] args)
 	{
-		new PR_7_3_FileTree();
+		new FileTree();
 	}
 	public void buildTree(DefaultMutableTreeNode node, int maxDepth)
 	{
