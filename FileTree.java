@@ -57,9 +57,10 @@ public class FileTree implements TreeExpansionListener
 
 		if (file.isDirectory()) {
 			File[] subFiles = file.listFiles();
-			@SuppressWarnings("unchecked")
-			Enumeration<DefaultMutableTreeNode> existingChildren = node.children();
-			Set<DefaultMutableTreeNode> existingSet = new HashSet<>(Collections.list(existingChildren));
+			Enumeration<TreeNode> existingChildren = node.children();
+			Set<DefaultMutableTreeNode> existingSet = new HashSet<>();
+			while (existingChildren.hasMoreElements())
+				existingSet.add((DefaultMutableTreeNode) existingChildren.nextElement());
 
 			if (subFiles != null) {
 				for (File child : subFiles) {
