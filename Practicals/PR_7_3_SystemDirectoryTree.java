@@ -11,7 +11,13 @@ public class PR_7_3_SystemDirectoryTree
 		frame.setSize(400, 400);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-		File rootDirectory = new File("/");
+		File rootDirectory;
+		String osName = System.getProperty("os.name").toLowerCase();
+		if (osName.startsWith("win"))
+			rootDirectory = new File("C:/");
+		else
+			rootDirectory = new File("/");
+
 		DefaultMutableTreeNode rootNode = new DefaultMutableTreeNode(rootDirectory);
 		DefaultTreeModel treeModel = new DefaultTreeModel(rootNode);
 		JTree tree = new JTree(treeModel);
