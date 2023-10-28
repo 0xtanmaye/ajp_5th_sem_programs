@@ -14,7 +14,13 @@ public class FileTree implements TreeExpansionListener
 		jframe.setSize(400, 400);
 		jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-		DefaultMutableTreeNode rootNode = new DefaultMutableTreeNode(new FileNode(new File("/")));
+		DefaultMutableTreeNode rootNode;
+		String osName = System.getProperty("os.name").toLowerCase();
+		if (osName.startsWith("win"))
+			rootNode = new DefaultMutableTreeNode(new FileNode(new File("C:/")));
+		else
+			rootNode = new DefaultMutableTreeNode(new FileNode(new File("/")));
+		
 		treeModel = new DefaultTreeModel(rootNode);
 		tree = new JTree(treeModel);
 		buildTree(rootNode, 2);	
