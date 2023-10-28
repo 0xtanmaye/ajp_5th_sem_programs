@@ -1,12 +1,12 @@
 import javax.swing.*;
 
-class JTableJFrame extends JFrame
+public class PR_8_1_JTableExampleV2
 {
-	JTableJFrame()
+	public static void main(String[] args)
 	{
-		this.setTitle("JTable Example");
-		this.setSize(400, 400);
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		JFrame jframe = new JFrame("JTable Example");
+		jframe.setSize(400, 400);
+		jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		String[] columnHeadings = {"Name Of Student", "Percentage", "Grade"};
 		String[][] tableRows = {
@@ -19,16 +19,8 @@ class JTableJFrame extends JFrame
 		
 		JTable studentTable = new JTable(tableRows, columnHeadings);
 		JScrollPane scrollableTable = new JScrollPane(studentTable);
-		this.add(scrollableTable);
-		// this.add(studentTable);
-		this.setVisible(true);
-	}
-}
-
-public class PR_8_1_JTableExampleV1
-{
-	public static void main(String[] args)
-	{
-		new JTableJFrame();
+		jframe.add(scrollableTable);
+		// jframe.add(studentTable);
+		jframe.setVisible(true);
 	}
 }

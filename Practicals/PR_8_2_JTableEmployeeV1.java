@@ -1,11 +1,9 @@
 import javax.swing.*;
-import java.awt.*;
 
 class JTableJFrame extends JFrame
 {
 	JTableJFrame()
 	{
-		this.setLayout(new FlowLayout());
 		// this.setTitle("JTable Example");
 		this.setSize(400, 400);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -25,7 +23,7 @@ class JTableJFrame extends JFrame
 	}
 }
 
-public class PR_8_2_JTableEmployee
+public class PR_8_2_JTableEmployeeV1
 {
 	public static void main(String[] args)
 	{

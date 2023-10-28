@@ -4,7 +4,7 @@ class JTableJFrame extends JFrame
 {
 	JTableJFrame()
 	{
-		this.setTitle("JTable Example");
+		this.setTitle("JTable Student");
 		this.setSize(400, 400);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
@@ -14,7 +14,12 @@ class JTableJFrame extends JFrame
 			{"Sarthak", "85%", "Distinction"},
 			{"Tanmay", "45%", "C"},
 			{"Jeevan", "80%", "Distinction"},
-			{"Ravan", "65%", "B"}
+			{"Ravan", "65%", "B"},
+			{"Durgesh", "82%", "Distinction"},
+			{"Shreyas", "85%", "Distinction"},
+			{"Om", "90%", "Distinction"},
+			{"Roshan", "75%", "A"},
+			{"Gaurav", "88%", "Distinction"}
 		};
 		
 		JTable studentTable = new JTable(tableRows, columnHeadings);
@@ -25,7 +30,7 @@ class JTableJFrame extends JFrame
 	}
 }
 
-public class PR_8_1_JTableExampleV1
+public class PR_8_3_JTableStudentV1
 {
 	public static void main(String[] args)
 	{
