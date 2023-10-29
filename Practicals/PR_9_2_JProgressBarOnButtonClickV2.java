@@ -30,14 +30,12 @@ public class PR_9_2_JProgressBarOnButtonClickV2 implements ActionListener
 			public void actionPerformed(ActionEvent ae) {
 				if (i <= 100) {
 					++i;
-					jPB.setValue(i);
-					jPB.setString(i + "%");
 				} else {
 					delayTimer.stop();
 					i = 0;
-					jPB.setValue(i);
-					jPB.setString(i + "%");
 				}
+				jPB.setValue(i);
+				jPB.setString(i + "%");
 			}
 		});
 	}
