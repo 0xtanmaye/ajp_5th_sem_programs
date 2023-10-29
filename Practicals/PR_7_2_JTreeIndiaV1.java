@@ -2,9 +2,9 @@ import javax.swing.*;
 import java.awt.*;
 import javax.swing.tree.*;
 
-class JTreeJFrame extends JFrame
+class JTreeIndiaJFrame extends JFrame
 {
-	JTreeJFrame()
+	JTreeIndiaJFrame()
 	{
 		this.setLayout(new BorderLayout());
 		// this.setTitle("JTree India");
@@ -35,6 +35,6 @@ public class PR_7_2_JTreeIndiaV1
 {
 	public static void main(String[] args)
 	{
-		new JTreeJFrame();
+		new JTreeIndiaJFrame();
 	}
 }

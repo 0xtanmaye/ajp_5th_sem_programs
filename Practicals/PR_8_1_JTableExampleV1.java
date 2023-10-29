@@ -1,8 +1,8 @@
 import javax.swing.*;
 
-class JTableJFrame extends JFrame
+class JTableExampleJFrame extends JFrame
 {
-	JTableJFrame()
+	JTableExampleJFrame()
 	{
 		this.setTitle("JTable Example");
 		this.setSize(400, 400);
@@ -29,6 +29,6 @@ public class PR_8_1_JTableExampleV1
 {
 	public static void main(String[] args)
 	{
-		new JTableJFrame();
+		new JTableExampleJFrame();
 	}
 }

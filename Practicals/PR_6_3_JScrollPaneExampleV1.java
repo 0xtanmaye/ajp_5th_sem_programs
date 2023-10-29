@@ -1,9 +1,9 @@
 import javax.swing.*;
 import java.awt.*;
 
-class JScrollPaneJFrame extends JFrame
+class JScrollPaneExampleJFrame extends JFrame
 {
-	JScrollPaneJFrame()
+	JScrollPaneExampleJFrame()
 	{
 		this.setLayout(new BorderLayout());
 		this.setTitle("JScrollPane Example");
@@ -25,6 +25,6 @@ public class PR_6_3_JScrollPaneExampleV1
 {
 	public static void main(String[] args)
 	{
-		new JScrollPaneJFrame();
+		new JScrollPaneExampleJFrame();
 	}
 }

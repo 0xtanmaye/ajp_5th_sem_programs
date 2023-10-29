@@ -2,13 +2,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-class JProgressBarJFrame extends JFrame implements ActionListener
+class JProgressBarOnButtonClickJFrame extends JFrame implements ActionListener
 {
 	int i;
 	JButton jB;
 	JProgressBar jPB;
 	Timer delayTimer; 
-	JProgressBarJFrame() throws InterruptedException
+	JProgressBarOnButtonClickJFrame() throws InterruptedException
 	{
 		this.setLayout(new FlowLayout());
 		this.setTitle("JProgressBar on JButton Click Example");
@@ -52,6 +52,6 @@ public class PR_9_2_JProgressBarOnButtonClickV1
 {
 	public static void main(String[] args) throws InterruptedException
 	{
-		new JProgressBarJFrame();
+		new JProgressBarOnButtonClickJFrame();
 	}
 }

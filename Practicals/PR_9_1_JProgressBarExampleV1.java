@@ -1,9 +1,9 @@
 import javax.swing.*;
 import java.awt.*;
 
-class JProgressBarJFrame extends JFrame
+class JProgressBarExampleJFrame extends JFrame
 {
-	JProgressBarJFrame() throws InterruptedException
+	JProgressBarExampleJFrame() throws InterruptedException
 	{
 		this.setLayout(new FlowLayout());
 		// this.setTitle("JProgressBar Example");
@@ -27,6 +27,6 @@ public class PR_9_1_JProgressBarExampleV1
 {
 	public static void main(String[] args) throws InterruptedException
 	{
-		new JProgressBarJFrame();
+		new JProgressBarExampleJFrame();
 	}
 }

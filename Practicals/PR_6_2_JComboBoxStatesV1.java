@@ -2,11 +2,11 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.awt.*;
 
-class JComboBoxJFrame extends JFrame implements ItemListener
+class JComboBoxStatesJFrame extends JFrame implements ItemListener
 {
 	JComboBox<String> stateComboBox;
 	JLabel msgLabel;
-	JComboBoxJFrame()
+	JComboBoxStatesJFrame()
 	{
 		this.setTitle("Indian States JComboBox");
 		// String states[] = {"Maharashtra", "Gujarat", "Goa", "Rajasthan"};
@@ -35,6 +35,6 @@ public class PR_6_2_JComboBoxStatesV1
 {
 	public static void main(String[] args)
 	{
-		new JComboBoxJFrame();
+		new JComboBoxStatesJFrame();
 	}
 }

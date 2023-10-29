@@ -2,11 +2,11 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.awt.*;
 
-class JComboBoxJFrame extends JFrame implements ItemListener
+class JComboBoxExampleJFrame extends JFrame implements ItemListener
 {
 	JComboBox<String> cityComboBox;
 	JLabel msgLabel;
-	JComboBoxJFrame()
+	JComboBoxExampleJFrame()
 	{
 		// this.setTitle("JComboBox Example");
 		// String cities[] = {"Solapur", "Pune", "Banglore", "Mumbai"};
@@ -35,6 +35,6 @@ public class PR_6_1_JComboBoxExampleV1
 {
 	public static void main(String[] args)
 	{
-		new JComboBoxJFrame();
+		new JComboBoxExampleJFrame();
 	}
 }
