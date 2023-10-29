@@ -2,18 +2,18 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-class JProgressBarJFrame extends JFrame implements ActionListener
+class PR_9_2_JProgressBarOnButtonClickV2 implements ActionListener
 {
 	int i;
 	JButton jB;
 	JProgressBar jPB;
 	Timer delayTimer; 
-	JProgressBarJFrame() throws InterruptedException
+	PR_9_2_JProgressBarOnButtonClickV2() throws InterruptedException
 	{
-		this.setLayout(new FlowLayout());
-		this.setTitle("JProgressBar on JButton Click Example");
-		this.setSize(300, 300);
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		JFrame jframe = new JFrame("JProgressBar on JButton Click Example");
+		jframe.setLayout(new FlowLayout());
+		jframe.setSize(300, 300);
+		jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		jB = new JButton("Start");
 		jB.addActionListener(this);
@@ -21,10 +21,10 @@ class JProgressBarJFrame extends JFrame implements ActionListener
 		jPB = new JProgressBar(0, 100);
 		jPB.setStringPainted(true);
 		
-		this.add(jPB);
-		this.add(jB);
+		jframe.add(jPB);
+		jframe.add(jB);
 		
-		this.setVisible(true);
+		jframe.setVisible(true);
 		
 		delayTimer = new Timer(100, new ActionListener() {
 			public void actionPerformed(ActionEvent ae) {
@@ -48,12 +48,8 @@ class JProgressBarJFrame extends JFrame implements ActionListener
 			delayTimer.start();
 		}
 	}
-}
-
-public class PR_9_2_JProgressBarOnButtonClickV1
-{
 	public static void main(String[] args) throws InterruptedException
 	{
-		new JProgressBarJFrame();
+		new PR_9_2_JProgressBarOnButtonClickV2();
 	}
 }
