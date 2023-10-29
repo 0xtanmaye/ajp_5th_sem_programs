@@ -6,7 +6,7 @@ public class PR_6_1_JComboBoxExampleV2 implements ItemListener
 {
 	JComboBox<String> cityComboBox;
 	JLabel msgLabel;
-	PR_6_1_JComboBoxExample()
+	public PR_6_1_JComboBoxExampleV2()
 	{
 		JFrame jframe = new JFrame();
 		// jframe.setTitle("JComboBox Example");
@@ -32,6 +32,6 @@ public class PR_6_1_JComboBoxExampleV2 implements ItemListener
 	}
 	public static void main(String[] args)
 	{
-		new PR_6_1_JComboBoxExample();
+		new PR_6_1_JComboBoxExampleV2();
 	}
 }
