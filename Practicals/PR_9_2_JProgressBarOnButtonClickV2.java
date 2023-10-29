@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-class PR_9_2_JProgressBarOnButtonClickV2 implements ActionListener
+public class PR_9_2_JProgressBarOnButtonClickV2 implements ActionListener
 {
 	int i;
 	JButton jB;
