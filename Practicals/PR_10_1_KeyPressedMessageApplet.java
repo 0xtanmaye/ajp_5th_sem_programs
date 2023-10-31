@@ -21,7 +21,7 @@ public class PR_10_1_KeyPressedMessageApplet extends Applet implements KeyListen
 	}
 	public void keyReleased(KeyEvent ke)
 	{
-		msg = "Key Released";
+		msg = "";
 		repaint();
 	}
 	public void keyTyped(KeyEvent ke)
