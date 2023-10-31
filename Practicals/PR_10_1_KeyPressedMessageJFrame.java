@@ -10,9 +10,9 @@ public class PR_10_1_KeyPressedMessageJFrame implements KeyListener
 		JFrame jframe = new JFrame("Key Pressed Message JFrame");
 		jframe.setSize(400, 400);
 		jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		// jframe.setLayout(new FlowLayout());
 		msgLabel = new JLabel();
-		jframe.add(msgLabel);
+		msgLabel.setHorizontalAlignment(JLabel.CENTER);
+		jframe.add(msgLabel, BorderLayout.CENTER);
 		jframe.addKeyListener(this);
 		jframe.setVisible(true);
 	}

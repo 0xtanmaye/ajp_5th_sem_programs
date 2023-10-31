@@ -10,10 +10,10 @@ public class PR_10_2_SpecialKeysJFrame implements KeyListener
 		JFrame jframe = new JFrame("Special Keys JFrame");
 		jframe.setSize(400, 200);
 		jframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		jframe.setLayout(new FlowLayout());
 
 		label = new JLabel();
-		jframe.add(label);
+		label.setHorizontalAlignment(JLabel.CENTER);
+		jframe.add(label, BorderLayout.CENTER);
 
 		jframe.addKeyListener(this);
 		jframe.setVisible(true);

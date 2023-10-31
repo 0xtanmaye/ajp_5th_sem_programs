@@ -9,7 +9,8 @@ public class PR_10_1_KeyPressedMessageFrame implements KeyListener
 		Frame frame = new Frame("Key Pressed Message Frame");
 		frame.setSize(400, 400);
 		msgLabel = new Label();
-		frame.add(msgLabel);
+		msgLabel.setAlignment(Label.CENTER);
+		frame.add(msgLabel, BorderLayout.CENTER);
 		frame.addKeyListener(this);
 		frame.setVisible(true);
 	}

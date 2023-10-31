@@ -10,7 +10,8 @@ public class PR_10_2_SpecialKeysFrame implements KeyListener
 		frame.setSize(400, 200);
 
 		label = new Label();
-		frame.add(label);
+		label.setAlignment(Label.CENTER);
+		frame.add(label, BorderLayout.CENTER);
 
 		frame.addKeyListener(this);
 		frame.setVisible(true);
