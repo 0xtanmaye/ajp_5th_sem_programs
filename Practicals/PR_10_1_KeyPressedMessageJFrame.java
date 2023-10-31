@@ -22,7 +22,7 @@ public class PR_10_1_KeyPressedMessageJFrame implements KeyListener
 	}
 	public void keyReleased(KeyEvent ke)
 	{
-		msgLabel.setText("Key Released");
+		msgLabel.setText("");
 	}
 	public void keyTyped(KeyEvent ke)
 	{
