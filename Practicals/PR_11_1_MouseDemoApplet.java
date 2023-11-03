@@ -10,8 +10,8 @@ public class PR_11_1_MouseDemoApplet extends Applet implements MouseListener
 	{
 		setLayout(null);
 		l = new Label("Hello Mouse");
-		l.setBounds(160, 175, 380, 150);
-		addMouseListener(this);
+		l.setBounds(160, 175, 380, 150); // Increase the width to accomodate the Label text
+		addMouseListener(this); // Add the MouseListener to the Applet window
 		add(l);
 	}
 	public void mousePressed(MouseEvent e)
