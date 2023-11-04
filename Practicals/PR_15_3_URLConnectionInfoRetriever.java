@@ -2,7 +2,7 @@ import java.io.IOException;
 import java.util.Date;
 import java.net.*;
 
-public class PR_14_3_URLConnectionInfoRetriever
+public class PR_15_3_URLConnectionInfoRetriever
 {
 	public static void main(String[] args)
 	{
