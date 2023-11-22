@@ -13,7 +13,7 @@ public class PR_18_1_CreateStudentTable
 		boolean status = stmt.execute("CREATE TABLE Student (Roll_No INTEGER, First_Name TEXT(50), Last_Name TEXT(50))");
 		System.out.println("Table 'Student' created successfully");
 		
-		int rs = stmt.executeUpdate("Insert into Student values(1, 'John', 'Doe')");
+		int rs = stmt.executeUpdate("INSERT INTO Student VALUES(1, 'John', 'Doe')");
 		if (rs != 0)
 			System.out.println("Record inserted successfully");
 		else
