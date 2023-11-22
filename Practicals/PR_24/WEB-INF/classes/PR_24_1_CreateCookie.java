@@ -7,12 +7,12 @@ import javax.servlet.annotation.WebServlet;
 
 public class PR_24_1_CreateCookie extends HttpServlet
 {
-	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException
+	public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException
 	{
 		Cookie cookie = new Cookie("testCookie", "hellothisismycookie");
 		cookie.setMaxAge(600);
-		response.addCookie(cookie);
-		response.setContentType("text/html");
-		response.getWriter().println("Cookie 'testCookie' has been created with a 10-minute expiration time.");
+		res.addCookie(cookie);
+		res.setContentType("text/html");
+		res.getWriter().println("Cookie 'testCookie' has been created with a 10-minute expiration time.");
 	}
 }
