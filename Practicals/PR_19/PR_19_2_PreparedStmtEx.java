@@ -5,7 +5,7 @@ public class PR_19_2_PreparedStmtEx
 	public static void main(String[] args)
 	{
 		try {
-			Class.forName("com.mysql.cj.jdbc.Driver"); // new class driver name "com.mysql.cj.jdbc.Driver" 
+			// Class.forName("com.mysql.cj.jdbc.Driver"); new class driver name "com.mysql.cj.jdbc.Driver" (Not required). 
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/testDB", "root", "root"); //keep "" empty if not given during installation
 			PreparedStatement stmt = con.prepareStatement("insert into student values(?, ?, ?)");
 			stmt.setInt(1, 101);

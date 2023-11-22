@@ -8,6 +8,7 @@ public class PR_19_3_RetrieveData
 			String jdbcUrl = "jdbc:mysql://localhost:3306/testDB";
 			String username = "root";
 			String password = "root";
+			// Class.forName("com.mysql.cj.jdbc.Driver"); new class driver name "com.mysql.cj.jdbc.Driver" (Not required). 
 			Connection conn = DriverManager.getConnection(jdbcUrl, username, password);
 			Statement stmt = conn.createStatement();
 			ResultSet rs = stmt.executeQuery("SELECT * FROM student");
