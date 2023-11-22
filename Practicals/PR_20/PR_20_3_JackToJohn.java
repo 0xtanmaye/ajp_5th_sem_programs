@@ -9,7 +9,7 @@ public class PR_20_3_JackToJohn
 			String username = "root";
 			String password = "root";
 			// Class.forName("com.mysql.cj.jdbc.Driver"); new class driver name "com.mysql.cj.jdbc.Driver" (Not required).
-			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/testDB", "root", "root");
+			Connection conn = DriverManager.getConnection(jdbcUrl, username, password);
 			Statement stmt = conn.createStatement();
 			int recordsUpdated = stmt.executeUpdate("UPDATE student SET first_name='John' WHERE first_name='Jack'");
 			if (recordsUpdated > 0)
